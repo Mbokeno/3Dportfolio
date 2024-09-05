@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@react-three/drei": "^9.111.5",
+    "@react-three/fiber": "^8.17.6",
+    "three": "^0.168.0",
+    "yarn": "^1.22.22"
+  },
+  "packageManager": "yarn@4.4.1"
+}
