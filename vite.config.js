@@ -9,4 +9,4 @@ export default defineConfig({
   },
   base: '/', // Adjust this if your project is not at the root
 }
-})
+)
