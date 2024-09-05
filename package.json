@@ -5,5 +5,8 @@
     "three": "^0.168.0",
     "yarn": "^1.22.22"
   },
+  "scripts": {
+  "deploy": "gh-pages -d dist"
+},
   "packageManager": "yarn@4.4.1"
 }
