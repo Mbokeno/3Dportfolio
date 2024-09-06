@@ -34,7 +34,7 @@ extend({ ScreenMaterial })
 
 
 export function Model({ onClick, ...props }) {
-  const { nodes, materials } = useGLTF('/RetroTV.glb')
+  const { nodes, materials } = useGLTF('/3Dportfolio/RetroTV.glb')
   const tvScreenRef = useRef()
   return (
     <group {...props} dispose={null} onClick={onClick}>
@@ -133,7 +133,7 @@ export function Model({ onClick, ...props }) {
           occlude={[tvScreenRef]}
           zIndexRange={[0, 0]}
         >
-          <HtmlFrame src="https://example.com" />
+          <HtmlFrame src="https://mbokeno.github.io/2DPortfolio/" />
         </Html>
       </mesh>
       <mesh
@@ -211,4 +211,4 @@ export function Model({ onClick, ...props }) {
   )
 }
 
-useGLTF.preload('/RetroTV.glb')
+useGLTF.preload('/3Dportfolio/RetroTV.glb')
