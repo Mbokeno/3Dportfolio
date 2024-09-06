@@ -133,7 +133,7 @@ export function Model({ onClick, ...props }) {
           occlude={[tvScreenRef]}
           zIndexRange={[0, 0]}
         >
-          <HtmlFrame src="https://example.com" />
+          <HtmlFrame src="https://mbokeno.github.io/2DPortfolio/" />
         </Html>
       </mesh>
       <mesh
