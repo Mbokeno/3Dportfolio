@@ -34,11 +34,7 @@ extend({ ScreenMaterial })
 
 
 export function Model({ onClick, ...props }) {
-<<<<<<< HEAD
   const { nodes, materials } = useGLTF('/3Dportfolio/RetroTV.glb')
-=======
-  const { nodes, materials } = useGLTF( '/3Dportfolio/RetroTV.glb')
->>>>>>> a47dfe6037f23c33e15d277a4711772d9dddc7fc
   const tvScreenRef = useRef()
   return (
     <group {...props} dispose={null} onClick={onClick}>
@@ -215,8 +211,4 @@ export function Model({ onClick, ...props }) {
   )
 }
 
-<<<<<<< HEAD
 useGLTF.preload('/3Dportfolio/RetroTV.glb')
-=======
-useGLTF.preload( '/3Dportfolio/RetroTV.glb')
->>>>>>> a47dfe6037f23c33e15d277a4711772d9dddc7fc
