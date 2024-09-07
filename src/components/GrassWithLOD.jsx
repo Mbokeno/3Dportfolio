@@ -18,10 +18,10 @@ export default function GrassWithLOD({ width = 100, ...props }) {
   });
 
   return (
-    <LOD ref={lodRef} {...props}>
+    <lOD ref={lodRef} {...props}>
       <Grass instances={200000} width={width} position={[0, 0, 0]} />
       <Grass instances={120000} width={width} position={[0, 0, 0]} />
       <Grass instances={10000} width={width} position={[0, 0, 0]} />
-    </LOD>
+    </lOD>
   );
 }
