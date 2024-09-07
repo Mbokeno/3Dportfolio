@@ -8,6 +8,7 @@ import { Model } from "./components/Model";
 import { BackgroundAudio } from "./components/BackgroundSound";
 import { Html } from "@react-three/drei";
 
+//Camera only zooms in and out on the tv. Set positions were determined beforehand
 function CameraController({ isZoomedIn }) {
   const { camera } = useThree();
   const zoomedOutPosition = [0, 5, 25];
@@ -30,6 +31,7 @@ function CameraController({ isZoomedIn }) {
   return null;
 }
 
+//Setting up the scene in a function before hand to be called
 function Scene({ isZoomedIn, toggleZoom }) {
   return (
     <>
@@ -43,7 +45,7 @@ function Scene({ isZoomedIn, toggleZoom }) {
 
 export default function App() {
   const [isZoomedIn, setIsZoomedIn] = useState(false);
-  const [audioStatus, setAudioStatus] = useState("Press Space to play audio");
+  const [audioStatus, setAudioStatus] = useState("Press 'M' to play audio");
 
   const toggleZoom = useCallback(() => {
     setIsZoomedIn(prev => !prev);
